@@ -1,0 +1,406 @@
+!analyze -v
+Connected to Windows 10 19041 x64 target at (Wed Jul 14 14:13:04.635 2021 (UTC - 4:00)), ptr64 TRUE
+SYMSRV:  BYINDEX: 0x7
+         c:\symbols*http://msdl.microsoft.com/download/symbols
+         ntkrnlmp.pdb
+         8CF5A3F04362D657F99E7B13A5FF6E221
+SYMSRV:  PATH: c:\symbols\ntkrnlmp.pdb\8CF5A3F04362D657F99E7B13A5FF6E221\ntkrnlmp.pdb
+SYMSRV:  RESULT: 0x00000000
+DBGHELP: nt - public symbols  
+        c:\symbols\ntkrnlmp.pdb\8CF5A3F04362D657F99E7B13A5FF6E221\ntkrnlmp.pdb
+Loading Kernel Symbols
+...............................................................
+................................................................
+...............................................................
+Loading User Symbols
+......
+Loading unloaded module list
+.....................
+Loading Wow64 Symbols
+......
+*******************************************************************************
+*                                                                             *
+*                        Bugcheck Analysis                                    *
+*                                                                             *
+*******************************************************************************
+
+IRQL_NOT_LESS_OR_EQUAL (a)
+An attempt was made to access a pageable (or completely invalid) address at an
+interrupt request level (IRQL) that is too high.  This is usually
+caused by drivers using improper addresses.
+If a kernel debugger is available get the stack backtrace.
+Arguments:
+Arg1: 0000000000000000, memory referenced
+Arg2: 0000000000000002, IRQL
+Arg3: 0000000000000001, bitfield :
+	bit 0 : value 0 = read operation, 1 = write operation
+	bit 3 : value 0 = not an execute operation, 1 = execute operation (only on chips which support this level of status)
+Arg4: fffff80654699d0a, address which referenced memory
+
+Debugging Details:
+------------------
+
+SYMSRV:  BYINDEX: 0x8
+         c:\symbols*http://msdl.microsoft.com/download/symbols
+         vsock.pdb
+         8BED2E2741B342119347157B7D60BB721
+SYMSRV:  UNC: c:\symbols\vsock.pdb\8BED2E2741B342119347157B7D60BB721\vsock.pdb - path not found
+SYMSRV:  UNC: c:\symbols\vsock.pdb\8BED2E2741B342119347157B7D60BB721\vsock.pd_ - path not found
+SYMSRV:  UNC: c:\symbols\vsock.pdb\8BED2E2741B342119347157B7D60BB721\file.ptr - path not found
+SYMSRV:  HTTPGET: /download/symbols/index2.txt
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/vsock.pdb/8BED2E2741B342119347157B7D60BB721/vsock.pdb
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/vsock.pdb/8BED2E2741B342119347157B7D60BB721/vsock.pd_
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/vsock.pdb/8BED2E2741B342119347157B7D60BB721/file.ptr
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  RESULT: 0x80190194
+DBGHELP: d:\build\ob\bora-14168184\bora-vmsoft\build\release-x64\vsock\windows\Win8Release\x64\bin\vsock.pdb - file not found
+DBGHELP: vsock - export symbols
+SYMSRV:  BYINDEX: 0x9
+         c:\symbols*http://msdl.microsoft.com/download/symbols
+         wow64cpu.pdb
+         05427BF23691864586EE7C652DB766CE1
+SYMSRV:  PATH: c:\symbols\wow64cpu.pdb\05427BF23691864586EE7C652DB766CE1\wow64cpu.pdb
+SYMSRV:  RESULT: 0x00000000
+DBGHELP: wow64cpu - public symbols  
+        c:\symbols\wow64cpu.pdb\05427BF23691864586EE7C652DB766CE1\wow64cpu.pdb
+SYMSRV:  BYINDEX: 0xA
+         c:\symbols*http://msdl.microsoft.com/download/symbols
+         wow64.pdb
+         1DC69EF2F57E950A15FB4BDF329708F21
+SYMSRV:  PATH: c:\symbols\wow64.pdb\1DC69EF2F57E950A15FB4BDF329708F21\wow64.pdb
+SYMSRV:  RESULT: 0x00000000
+DBGHELP: wow64 - public symbols  
+        c:\symbols\wow64.pdb\1DC69EF2F57E950A15FB4BDF329708F21\wow64.pdb
+SYMSRV:  BYINDEX: 0xB
+         c:\symbols*http://msdl.microsoft.com/download/symbols
+         ntdll.pdb
+         BEFD9966837E3C385ECEAA4A0DBD085C1
+SYMSRV:  PATH: c:\symbols\ntdll.pdb\BEFD9966837E3C385ECEAA4A0DBD085C1\ntdll.pdb
+SYMSRV:  RESULT: 0x00000000
+DBGHELP: ntdll - public symbols  
+        c:\symbols\ntdll.pdb\BEFD9966837E3C385ECEAA4A0DBD085C1\ntdll.pdb
+SYMSRV:  BYINDEX: 0xC
+         c:\symbols*http://msdl.microsoft.com/download/symbols
+         mssmbios.pdb
+         53ADC03D875B3F78AC94CE4D75054C461
+SYMSRV:  PATH: c:\symbols\mssmbios.pdb\53ADC03D875B3F78AC94CE4D75054C461\mssmbios.pdb
+SYMSRV:  RESULT: 0x00000000
+DBGHELP: mssmbios - public symbols  
+        c:\symbols\mssmbios.pdb\53ADC03D875B3F78AC94CE4D75054C461\mssmbios.pdb
+SYMSRV:  BYINDEX: 0xD
+         C:\Symbols*http://msdl.microsoft.com/download/symbols
+         ntkrnlmp.exe
+         28B9DE6A1043000
+SYMSRV:  PATH: C:\Symbols\ntkrnlmp.exe\28B9DE6A1043000\ntkrnlmp.exe
+SYMSRV:  RESULT: 0x00000000
+DBGHELP: C:\Symbols\ntkrnlmp.exe\28B9DE6A1043000\ntkrnlmp.exe - OK
+SYMSRV:  BYINDEX: 0xE
+         C:\Symbols*http://msdl.microsoft.com/download/symbols
+         vsock.sys
+         5D2D5AE718000
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\vsock.sys - path not found
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\vsock.sy_ - path not found
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\file.ptr - path not found
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/vsock.sys
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/vsock.sy_
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/file.ptr
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  RESULT: 0x80190194
+SYMSRV:  BYINDEX: 0xF
+         C:\Symbols*http://msdl.microsoft.com/download/symbols
+         vsock.sys
+         5D2D5AE718000
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\vsock.sys - path not found
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\vsock.sy_ - path not found
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\file.ptr - path not found
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/vsock.sys
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/vsock.sy_
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/file.ptr
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  RESULT: 0x80190194
+SYMSRV:  BYINDEX: 0x10
+         C:\Symbols*http://msdl.microsoft.com/download/symbols
+         vsock.sys
+         5D2D5AE718000
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\vsock.sys - path not found
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\vsock.sy_ - path not found
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\file.ptr - path not found
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/vsock.sys
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/vsock.sy_
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/file.ptr
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  RESULT: 0x80190194
+SYMSRV:  BYINDEX: 0x11
+         C:\Symbols*http://msdl.microsoft.com/download/symbols
+         vsock.sys
+         5D2D5AE718000
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\vsock.sys - path not found
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\vsock.sy_ - path not found
+SYMSRV:  UNC: C:\Symbols\vsock.sys\5D2D5AE718000\file.ptr - path not found
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/vsock.sys
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/vsock.sy_
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/vsock.sys/5D2D5AE718000/file.ptr
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  RESULT: 0x80190194
+
+"C:\WINDOWS\System32\KERNELBASE.dll" was not found in the image list.
+Debugger will attempt to load "C:\WINDOWS\System32\KERNELBASE.dll" at given base 00000000`00000000.
+
+Please provide the full image name, including the extension (i.e. kernel32.dll)
+for more reliable results.Base address and size overrides can be given as
+.reload <image.ext>=<base>,<size>.
+SYMSRV:  BYINDEX: 0x12
+         c:\symbols*http://msdl.microsoft.com/download/symbols
+         KERNELBASE.dll
+         FFFFFFFE
+SYMSRV:  UNC: c:\symbols\KERNELBASE.dll\FFFFFFFE\KERNELBASE.dll - path not found
+SYMSRV:  UNC: c:\symbols\KERNELBASE.dll\FFFFFFFE\KERNELBASE.dl_ - path not found
+SYMSRV:  UNC: c:\symbols\KERNELBASE.dll\FFFFFFFE\file.ptr - path not found
+SYMSRV:  HTTPGET: /download/symbols/KERNELBASE.dll/FFFFFFFE/KERNELBASE.dll
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/KERNELBASE.dll/FFFFFFFE/KERNELBASE.dl_
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  HTTPGET: /download/symbols/KERNELBASE.dll/FFFFFFFE/file.ptr
+SYMSRV:  HttpQueryInfo(HTTP_QUERY_CONTENT_LENGTH): 800C2F76 - ERROR_HTTP_HEADER_NOT_FOUND
+SYMSRV:  HttpQueryInfo: 80190194 - HTTP_STATUS_NOT_FOUND
+SYMSRV:  RESULT: 0x80190194
+DBGHELP: C:\Program Files (x86)\Windows Kits\10\Debuggers\KERNELBASE.dll - file not found
+DBGENG:  Partial symbol load found image C:\WINDOWS\System32\KERNELBASE.dll.
+SYMSRV:  BYINDEX: 0x13
+         c:\symbols*http://msdl.microsoft.com/download/symbols
+         kernelbase.pdb
+         61BF2C3BC56189F668F1E368B531FA1D1
+SYMSRV:  PATH: c:\symbols\kernelbase.pdb\61BF2C3BC56189F668F1E368B531FA1D1\kernelbase.pdb
+SYMSRV:  RESULT: 0x00000000
+DBGHELP: KERNELBASE_0 - public symbols  
+        c:\symbols\kernelbase.pdb\61BF2C3BC56189F668F1E368B531FA1D1\kernelbase.pdb
+
+KEY_VALUES_STRING: 1
+
+
+PROCESSES_ANALYSIS: 1
+
+SERVICE_ANALYSIS: 1
+
+STACKHASH_ANALYSIS: 1
+
+TIMELINE_ANALYSIS: 1
+
+
+DUMP_CLASS: 1
+
+DUMP_QUALIFIER: 0
+
+BUILD_VERSION_STRING:  19041.1.amd64fre.vb_release.191206-1406
+
+DUMP_TYPE:  0
+
+BUGCHECK_P1: 0
+
+BUGCHECK_P2: 2
+
+BUGCHECK_P3: 1
+
+BUGCHECK_P4: fffff80654699d0a
+
+WRITE_ADDRESS:  0000000000000000 
+
+CURRENT_IRQL:  2
+
+FAULTING_IP: 
+nt!KiAcquireKobjectLockSafe+e
+fffff806`54699d0a f00fba2907      lock bts dword ptr [rcx],7
+
+CPU_COUNT: 2
+
+CPU_MHZ: e10
+
+CPU_VENDOR:  GenuineIntel
+
+CPU_FAMILY: 6
+
+CPU_MODEL: a5
+
+CPU_STEPPING: 5
+
+CPU_MICROCODE: 6,a5,5,0 (F,M,S,R)  SIG: 0'00000000 (cache) 0'00000000 (init)
+
+DEFAULT_BUCKET_ID:  WIN8_DRIVER_FAULT
+
+BUGCHECK_STR:  AV
+
+PROCESS_NAME:  Kernel_Driver_Fuzzer.exe
+
+ANALYSIS_SESSION_HOST:  DESKTOP-4T58BAS
+
+ANALYSIS_SESSION_TIME:  07-14-2021 14:13:09.0338
+
+ANALYSIS_VERSION: 10.0.18362.1 amd64fre
+
+TRAP_FRAME:  fffffd89a496f310 -- (.trap 0xfffffd89a496f310)
+NOTE: The trap frame does not contain all registers.
+Some register values may be zeroed or incorrect.
+rax=fffff80650c70180 rbx=0000000000000000 rcx=0000000000000000
+rdx=0000000000000000 rsi=0000000000000000 rdi=0000000000000000
+rip=fffff80654699d0a rsp=fffffd89a496f4a0 rbp=fffffd89a496f579
+ r8=0000000000000001  r9=0000000000000001 r10=0000000000000000
+r11=fffffd89a496f500 r12=0000000000000000 r13=0000000000000000
+r14=0000000000000000 r15=0000000000000000
+iopl=0         nv up ei pl zr na po nc
+nt!KiAcquireKobjectLockSafe+0xe:
+fffff806`54699d0a f00fba2907      lock bts dword ptr [rcx],7 ds:00000000`00000000=????????
+Resetting default scope
+
+LAST_CONTROL_TRANSFER:  from fffff806548ac9b2 to fffff806547a56e0
+
+STACK_TEXT:  
+fffffd89`a496ea18 fffff806`548ac9b2 : fffffd89`a496eb80 fffff806`5472f870 00000000`00000000 00000000`00000000 : nt!DbgBreakPointWithStatus
+fffffd89`a496ea20 fffff806`548abf96 : 00000000`00000003 fffffd89`a496eb80 fffff806`547b2750 00000000`0000000a : nt!KiBugCheckDebugBreak+0x12
+fffffd89`a496ea80 fffff806`5479d947 : 00000000`00000000 00000000`00000000 00000000`00000000 fffff806`54816eb7 : nt!KeBugCheck2+0x946
+fffffd89`a496f190 fffff806`547af729 : 00000000`0000000a 00000000`00000000 00000000`00000002 00000000`00000001 : nt!KeBugCheckEx+0x107
+fffffd89`a496f1d0 fffff806`547aba29 : 00000000`c0000001 00000000`00000000 00000000`00000000 00000000`00000000 : nt!KiBugCheckDispatch+0x69
+fffffd89`a496f310 fffff806`54699d0a : ffff800f`6f344938 00000000`00000000 ffff800f`6e4af080 ffff800f`6f344940 : nt!KiPageFault+0x469
+fffffd89`a496f4a0 fffff806`5466500c : 00000000`00000000 00000000`00000000 fffffd89`00000006 00000000`00001001 : nt!KiAcquireKobjectLockSafe+0xe
+fffffd89`a496f4d0 fffff806`57004aad : ffff800f`67f3c294 fffff806`5700bcc9 00000000`00002714 ffffffff`00000000 : nt!KeWaitForMultipleObjects+0xfc
+fffffd89`a496f5c0 fffff806`5700bdb7 : 00000000`00000000 ffff800f`66ddca70 00000000`00000000 00000000`00000624 : vsock!DllInitialize+0x255d
+fffffd89`a496f640 fffff806`57002e83 : 00000000`00000000 00000000`00000001 00000000`00000000 fffffd89`a496f6b0 : vsock!DllInitialize+0x9867
+fffffd89`a496f680 fffff806`57003dcc : 00000000`00000624 00000000`00000000 ffff800f`6ef76310 ffff800f`6b4a65b0 : vsock!DllInitialize+0x933
+fffffd89`a496f6e0 fffff806`57002c27 : ffff800f`6e4af6d0 ffff800f`6bd95cf0 fffffd89`a496f801 ffff800f`6ef76310 : vsock!DllInitialize+0x187c
+fffffd89`a496f740 fffff806`54687d3a : 00000000`00060070 00000000`00000000 ffff948a`f076c3f0 00000000`00000000 : vsock!DllInitialize+0x6d7
+fffffd89`a496f790 fffff806`54687ce7 : 00000000`00000000 ffff800f`66ddca70 ffff800f`6e4af608 fffff806`5466b746 : nt!IopfCallDriver+0x46
+fffffd89`a496f7d0 fffff806`54687ca0 : ffff800f`6e4af530 00000000`00000001 00000000`00000000 fffff806`5466aebc : nt!IofCallDriver+0x17
+fffffd89`a496f800 fffff806`54687bc0 : 00000000`009850b6 ffff800f`67f3c260 ffff800f`6d328300 ffff800f`67f3c280 : nt!IoCallDriverWithTracing+0x2c
+fffffd89`a496f850 fffff806`549e13f2 : ffff800f`6bd95cf0 fffffd89`a496f8c0 ffff800f`6ef76310 00000000`00000002 : nt!IopCallDriverReference+0x84
+fffffd89`a496f880 fffff806`549e0dde : 00000000`00000000 00000000`00010000 ffff800f`6ef76310 ffff800f`6bd95cf0 : nt!IopSynchronousServiceTail+0xee
+fffffd89`a496f8f0 fffff806`549e0836 : 00000000`770c4601 00000000`00000000 00000000`00000000 00000000`00000000 : nt!IopXxxControlFile+0x59a
+fffffd89`a496fa20 fffff806`547af175 : 00000000`770c4630 00000000`010bf558 00000000`00d7fda0 00000000`00e4b000 : nt!NtDeviceIoControlFile+0x56
+fffffd89`a496fa90 00000000`770c1cfc : 00000000`770c1933 00000023`7714121c 00007ffe`5db00023 00000000`00000000 : nt!KiSystemServiceCopyEnd+0x25
+00000000`00d7e918 00000000`770c1933 : 00000023`7714121c 00007ffe`5db00023 00000000`00000000 00000000`010ff824 : wow64cpu!CpupSyscallStub+0xc
+00000000`00d7e920 00000000`770c11b9 : 00000000`010ff558 00007ffe`5db039b4 00000000`00d7e9f0 00007ffe`5db03aaf : wow64cpu!DeviceIoctlFileFault+0x31
+00000000`00d7e9d0 00007ffe`5db038c9 : 00000000`00e4a000 00000000`009e00e8 00000000`00000000 00000000`00d7f240 : wow64cpu!BTCpuSimulate+0x9
+00000000`00d7ea10 00007ffe`5db032bd : 00000000`00000000 00000000`029fee88 00000000`00000000 00000000`00000000 : wow64!RunCpuSimulation+0xd
+00000000`00d7ea40 00007ffe`5f72266e : 00000000`00000000 00000000`00000010 00007ffe`5f7806e0 00000000`00e49000 : wow64!Wow64LdrpInitialize+0x12d
+00000000`00d7ecf0 00007ffe`5f7112f1 : 00000000`00000001 00000000`00000000 00000000`00000000 00000000`00000001 : ntdll!LdrpInitializeProcess+0x193e
+00000000`00d7f120 00007ffe`5f6c45b3 : 00000000`00000000 00007ffe`5f650000 00000000`00000000 00000000`00e4b000 : ntdll!_LdrpInitialize+0x4cd25
+00000000`00d7f1c0 00007ffe`5f6c455e : 00000000`00d7f240 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!LdrpInitialize+0x3b
+00000000`00d7f1f0 00000000`00000000 : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!LdrInitializeThunk+0xe
+
+
+THREAD_SHA1_HASH_MOD_FUNC:  bd07c21eb44f20d8b678c4921930d6c573d4aabc
+
+THREAD_SHA1_HASH_MOD_FUNC_OFFSET:  b8831e0a37300603503f87a35ae45ccaaa942ff1
+
+THREAD_SHA1_HASH_MOD:  a44badc2feb43af2c10fab2cfea1393ae2034ed7
+
+FOLLOWUP_IP: 
+vsock!DllInitialize+255d
+fffff806`57004aad 8bc8            mov     ecx,eax
+
+FAULT_INSTR_CODE:  e981c88b
+
+SYMBOL_STACK_INDEX:  8
+
+SYMBOL_NAME:  vsock!DllInitialize+255d
+
+FOLLOWUP_NAME:  MachineOwner
+
+MODULE_NAME: vsock
+
+IMAGE_NAME:  vsock.sys
+
+DEBUG_FLR_IMAGE_TIMESTAMP:  5d2d5ae7
+
+STACK_COMMAND:  .thread ; .cxr ; kb
+
+BUCKET_ID_FUNC_OFFSET:  255d
+
+FAILURE_BUCKET_ID:  AV_vsock!DllInitialize
+
+BUCKET_ID:  AV_vsock!DllInitialize
+
+PRIMARY_PROBLEM_CLASS:  AV_vsock!DllInitialize
+
+TARGET_TIME:  2021-07-14T18:05:52.000Z
+
+OSBUILD:  19041
+
+OSSERVICEPACK:  0
+
+SERVICEPACK_NUMBER: 0
+
+OS_REVISION: 0
+
+SUITE_MASK:  272
+
+PRODUCT_TYPE:  1
+
+OSPLATFORM_TYPE:  x64
+
+OSNAME:  Windows 10
+
+OSEDITION:  Windows 10 WinNt TerminalServer SingleUserTS
+
+OS_LOCALE:  
+
+USER_LCID:  0
+
+OSBUILD_TIMESTAMP:  1991-08-27 01:08:58
+
+BUILDDATESTAMP_STR:  191206-1406
+
+BUILDLAB_STR:  vb_release
+
+BUILDOSVER_STR:  10.0.19041.1.amd64fre.vb_release.191206-1406
+
+ANALYSIS_SESSION_ELAPSED_TIME:  ca2
+
+ANALYSIS_SOURCE:  KM
+
+FAILURE_ID_HASH_STRING:  km:av_vsock!dllinitialize
+
+FAILURE_ID_HASH:  {e442cebd-ee18-9d89-6639-c7fea5cc7397}
+
+Followup:     MachineOwner
+---------
+
+0: kd> .trap 0xfffffd89a496f310
+NOTE: The trap frame does not contain all registers.
+Some register values may be zeroed or incorrect.
+rax=fffff80650c70180 rbx=0000000000000000 rcx=0000000000000000
+rdx=0000000000000000 rsi=0000000000000000 rdi=0000000000000000
+rip=fffff80654699d0a rsp=fffffd89a496f4a0 rbp=fffffd89a496f579
+ r8=0000000000000001  r9=0000000000000001 r10=0000000000000000
+r11=fffffd89a496f500 r12=0000000000000000 r13=0000000000000000
+r14=0000000000000000 r15=0000000000000000
+iopl=0         nv up ei pl zr na po nc
+nt!KiAcquireKobjectLockSafe+0xe:
+fffff806`54699d0a f00fba2907      lock bts dword ptr [rcx],7 ds:00000000`00000000=????????
